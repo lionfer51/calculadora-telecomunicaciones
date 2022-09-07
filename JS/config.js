@@ -8,8 +8,8 @@ distancia 5km
 4.8Ghz
 */
 
-var boton=document.getElementById('btn');
-var dist,frec,salidatx,perdida,arx,cables,sensibilidad;
+const boton=document.getElementById('btn');
+const dist,frec,salidatx,perdida,arx,cables,sensibilidad;
 boton.addEventListener('click',()=>{
     dist=parseFloat(document.getElementById('dist').value);
     frec=parseFloat(document.getElementById('frecGhz').value);

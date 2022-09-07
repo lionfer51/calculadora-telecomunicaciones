@@ -1,20 +1,20 @@
-    salidatx=15;
-    perdida=-3;
-    arx=24;
-    cables=-3;
-    sensibilidad=-95
-	var arreglo=[5,8,10,15];
-	var frecuencias=[4.8,5.5,5];
-	for(dist of arreglo){
-		for (frec of frecuencias){
-			//fsl(5,4.8)
-			fsl(dist,frec);
-			enlace(salidatx,perdida,arx,bfsl(dist,frec),arx,cables);
-			//enlace(15,3,24,120,24,3)
-			margen(benlace(salidatx,perdida,arx,bfsl(dist,frec),arx,cables),sensibilidad);
-			pire(salidatx,perdida,arx);
-			fresnel(dist,frec);
-		}
+const    salidatx=15;
+const    perdida=-3;
+const    arx=24;
+const    cables=-3;
+const    sensibilidad=-95
+const arreglo=[5,8,10,15];
+const frecuencias=[4.8,5.5,5];
+for(dist of arreglo){
+	for (frec of frecuencias){
+		//fsl(5,4.8)
+		fsl(dist,frec);
+		enlace(salidatx,perdida,arx,bfsl(dist,frec),arx,cables);
+		//enlace(15,3,24,120,24,3)
+		margen(benlace(salidatx,perdida,arx,bfsl(dist,frec),arx,cables),sensibilidad);
+		pire(salidatx,perdida,arx);
+		fresnel(dist,frec);
 	}
+}
 
 	
